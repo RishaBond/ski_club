@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>SKI CLUB Прокат горных лыж и сноубордов</title>
+	<meta name="description" content="SKI CLUB Прокат горных лыж и сноубордов">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto+Condensed:400,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+	<header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img class="logo" src="img/logo.png" alt="SKI CLUB">
+                    </div>
+                    <div class="col-md-6 col-sm-12 booking">
+                        <p>Прокат горных лыж и сноубордов</p>
+                        <button class="btn btn__header">Бронировать</button>
+                    </div>
+                    <div class="col-md-3 col-sm-6 call">
+                        <p class="call__time">Звоните: с 9:00 до 20:00</p>
+                        <p class="call__number">+7 (928) 24 555 24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#">О компании</a></li>
+                        <li class="nav__item"><a href="#">Оборудование</a></li>
+                        <li class="nav__item"><a href="#">Инструкторы</a></li>
+                        <li class="nav__item"><a href="#">Цены</a></li>
+                        <li class="nav__item"><a href="#">Наши проекты</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header__slider">
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel slider">
+                        <div class="slider__item">
+                            <div class="col-md-7">
+                                <img class="slider__bg" src="img/header-slider.png" alt="">
+                                <div class="slider__text">
+                                    <p class="slider__text_first"><span>прокатись</span> со мной</p>
+                                    <p class="slider__text_second">по самой длинной трассе!</p>
+                                    <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
+                                </div>
+                                <button class="btn">Участвовать!</button>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="slider__img" src="img/snowborder.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="col-md-7">
+                                <img class="slider__bg" src="img/header-slider.png" alt="">
+                                <div class="slider__text">
+                                    <p class="slider__text_first"><span>прокатись</span> со мной</p>
+                                    <p class="slider__text_second">по самой длинной трассе!</p>
+                                    <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
+                                </div>
+                                <button class="btn">Участвовать!</button>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="slider__img" src="img/snowborder.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="col-md-7">
+                                <img class="slider__bg" src="img/header-slider.png" alt="">
+                                <div class="slider__text">
+                                    <p class="slider__text_first"><span>прокатись</span> со мной</p>
+                                    <p class="slider__text_second">по самой длинной трассе!</p>
+                                    <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
+                                </div>
+                                <button class="btn">Участвовать!</button>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="slider__img" src="img/snowborder.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer></footer>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').owlCarousel({
+                loop:true,
+                margin: 70,
+                dots:true,
+                nav: false,
+                items: 1
+            })
+        });
+    </script>
+
+</body>
+</html>
