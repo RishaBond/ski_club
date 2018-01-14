@@ -7,7 +7,7 @@
         <title>SKI CLUB Прокат горных лыж и сноубордов</title>
         <meta name="description" content="SKI CLUB Прокат горных лыж и сноубордов">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto+Condensed:400,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
@@ -39,23 +39,20 @@
             <div class="header__top_mobile">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-4 col-xs-4">
+                        <div class="col-md-3 col-sm-5 col-xs-5">
                             <img class="logo" src="img/logo.png" alt="SKI CLUB">
-                        </div>
-                        <div class="col-md-1 col-sm-offset-1 col-xs-offset-1 col-sm-4 col-xs-4">
-                            <img class="header__top_eagle" src="img/eagle.png" alt="">
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-3">
-                            <button class="btn btn__header">Бронировать</button>
-                        </div>
-                        <div class="col-md-3 col-sm-5 col-xs-5 booking">
-                            <h1 class="h1">Прокат горных лыж и сноубордов</h1>
                         </div>
                         <div class="col-md-3 col-sm-7 col-xs-7">
                             <div class="call">
                                 <p class="call__time">Звоните: с 9:00 до 20:00</p>
                                 <p class="call__number">+7 (928) 24 555 24</p>
                             </div>
+                        </div>
+                        <div class="col-md-3 col-sm-8 col-xs-8 booking">
+                            <h1 class="h1">Прокат горных лыж и сноубордов</h1>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <button class="btn btn__header">Бронировать</button>
                         </div>
                     </div>
                 </div>
@@ -65,12 +62,12 @@
                 <div class="container">
                     <div class="row">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="#">О компании</a></li>
-                            <li class="nav__item"><a href="#">Оборудование</a></li>
-                            <li class="nav__item"><a href="#">Инструкторы</a></li>
-                            <li class="nav__item"><a href="#">Цены</a></li>
-                            <li class="nav__item"><a href="#">Наши проекты</a></li>
-                            <li class="nav__item"><a href="#">Контакты</a></li>
+                            <li class="nav__item"><a href="#about">О компании</a></li>
+                            <li class="nav__item"><a href="#equipment">Оборудование</a></li>
+                            <li class="nav__item"><a href="#team">Инструкторы</a></li>
+                            <li class="nav__item"><a href="#price">Цены</a></li>
+                            <li class="nav__item"><a href="#rental">Наши проекты</a></li>
+                            <li class="nav__item"><a href="#contact">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -143,6 +140,7 @@
         </header>
         <main>
             <section class="section-services section">
+                <a name="about"></a>
                 <div class="container">
                     <div class="title">
                         <h2 class="h2">Наши услуги</h2>
@@ -196,6 +194,8 @@
                 </div>
             </section>
             <section class="section-equip section section-color">
+                <a name="equipment"></a>
+                <a name="price"></a>
                 <div class="container">
                     <div class="title">
                         <h2>Прокат оборудования</h2>
@@ -399,6 +399,7 @@
                 </div>
             </section>
             <section class="section-team section">
+                <a name="team"></a>
                 <div class="container">
                     <div class="title">
                         <h2 class="h2">Наша команда</h2>
@@ -531,6 +532,7 @@
                 </div>
             </section>
             <section class="section-rental section">
+                <a name="rental"></a>
                 <div class="container">
                     <div class="title">
                         <h2 class="h2">Наши пункты проката</h2>
@@ -591,6 +593,7 @@
                 </div>
             </section>
             <section class="section-contact section-color">
+                <a name="contact"></a>
                 <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A036863424f02bc1d42f2e26938a2a7c9189841903e6eca00d91d2d4fc53903ff&amp;width=50%&amp;height=470&amp;lang=ru_RU&amp;scroll=true"></script>-->
                 <div id="map"></div>
                 <div class="contact">
@@ -612,73 +615,123 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
-
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__top">
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <img src="img/logo-white.png" alt="SKI CLUB">
+                        </div>
+                        <div class="col-md-2 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12">
+                            <div class="footer__nav">
+                                <h4>Информация</h4>
+                                <a href="#about">О компании</a>
+                                <a href="#rental">Наши проекты</a>
+                                <a href="#">Правила проката</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h4>Контакты</h4>
+                            <p>Тел.: +7 (928) 24 555 24</p>
+                            <p>Адрес: 354392, Краснодарский край,
+                                г. Сочи, <br> Адлерский р-н, п. Эсто-Садок, <br>
+                                ул. Олимпийская, 18</p>
+                            <div class="btn btn__footer">Онлайн бронирование</div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="footer__pay">
+                                <h4>Мы принимаем</h4>
+                                <div class="payment">
+                                    <img src="img/card/visa.jpg" alt="visa" class="payment__img">
+                                    <img src="img/card/mastercard.jpg" alt="mastercard" class="payment__img">
+                                    <img src="img/card/payonline.jpg" alt="pay online" class="payment__img">
+                                </div>
+                                <a href="#">подробнее о приеме платежей</a>
+                                <p>Индивидуальный предприниматель <br>
+                                    Сычев Павел Алексеевич <br>
+                                    ИНН 701701647164, ОГРНИП 315236700017972</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="copyright">
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="copyright_left">
+                                <p><a href="https://skirentservice.ru" target="_blank">www.skirentservice.ru</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="copyright_center">
+                                <p>Группа компаний Ski Club</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <div class="copyright_right">
+                                <p>Разработка сайта: <a href="">Бондаренко Ирина</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <link rel="stylesheet" href="css/main.min.css">
         <script src="js/scripts.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script>
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $('.slider').owlCarousel({
-                    loop:true,
+                    loop: true,
                     margin: 10,
-                    dots:true,
+                    dots: true,
                     nav: false,
                     autoplay: true,
                     autoplayTimeout: 6000,
-                    autoplayHoverPause:true,
-                    smartSpeed: 800,
+                    autoplayHoverPause: true,
+                    smartSpeed: 600,
                     items: 1
                 });
                 $('.equip').owlCarousel({
-                    loop:true,
+                    loop: true,
                     margin: 10,
-                    dots:true,
+                    dots: true,
                     nav: false,
-                    responsiveClass:true,
-                    smartSpeed: 800,
+                    responsiveClass: true,
+                    smartSpeed: 600,
                     responsive:{
                         0:{
-                            items:1
+                            items: 1
                         },
                         600:{
-                            items:3
+                            items: 3
                         },
                         1000:{
-                            items:4
+                            items: 4
                         }
                     }
                 });
                 $('.rental').owlCarousel({
-                    loop:true,
+                    loop: true,
                     margin: 10,
-                    dots:true,
+                    dots: true,
                     nav: false,
-                    smartSpeed: 800,
+                    smartSpeed: 600,
                     items: 1
                 });
                 var myMap;
+
                 ymaps.ready(init);
 
                 function init () {
-                    // Создание экземпляра карты и его привязка к контейнеру с
-                    // заданным id ("map").
                     myMap = new ymaps.Map('map', {
-                        // При инициализации карты обязательно нужно указать
-                        // её центр и коэффициент масштабирования.
-                        center: [55.76, 37.64], // Москва
-                        zoom: 10
+                        center: [43.685264, 40.260353], // Сочи
+                        zoom: 14
                     }, {
                         searchControlProvider: 'yandex#search'
                     });
 
-                    document.getElementById('destroyButton').onclick = function () {
-                        // Для уничтожения используется метод destroy.
-                        myMap.destroy();
-                    };
-
                 }
-            });
+            })
         </script>
 
     </body>
