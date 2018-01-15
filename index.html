@@ -22,7 +22,7 @@
                             <h1 class="h1">Прокат горных лыж и сноубордов</h1>
                         </div>
                         <div class="col-md-2 col-sm-3 col-xs-3">
-                            <button class="btn btn__header">Бронировать</button>
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn__header">Бронировать</button>
                         </div>
                         <div class="col-md-1 col-sm-4 col-xs-4">
                             <img class="header__top_eagle" src="img/eagle.png" alt="">
@@ -39,20 +39,20 @@
             <div class="header__top_mobile">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-5 col-xs-5">
+                        <div class="col-md-3 col-sm-5 col-xs-12">
                             <img class="logo" src="img/logo.png" alt="SKI CLUB">
                         </div>
-                        <div class="col-md-3 col-sm-7 col-xs-7">
+                        <div class="col-md-3 col-sm-8 col-xs-12 booking">
+                            <h1 class="h1">Прокат горных лыж и сноубордов</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-7 col-xs-12">
                             <div class="call">
                                 <p class="call__time">Звоните: с 9:00 до 20:00</p>
                                 <p class="call__number">+7 (928) 24 555 24</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-8 col-xs-8 booking">
-                            <h1 class="h1">Прокат горных лыж и сноубордов</h1>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-4">
-                            <button class="btn btn__header">Бронировать</button>
+                        <div class="col-md-2 col-sm-4 col-xs-12">
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn  btn__header">Бронировать</button>
                         </div>
                     </div>
                 </div>
@@ -75,6 +75,12 @@
             <div class="header__slider">
                 <div class="container">
                     <div class="row">
+                        <div class="slider__mobil">
+                            <img src="img/slider__mobile.png" alt="">
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn">Участвовать!</button>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="owl-carousel slider">
                             <div class="slider__item">
                                 <div class="col-md-7 col-sm-12">
@@ -84,7 +90,7 @@
                                         <p class="slider__text_second">по самой длинной трассе!</p>
                                         <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
                                     </div>
-                                    <button class="btn">Участвовать!</button>
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn">Участвовать!</button>
                                 </div>
                                 <div class="col-md-5 col-sm-0">
                                     <img class="slider__img" src="img/snowborderr.png" alt="">
@@ -98,7 +104,7 @@
                                         <p class="slider__text_second">по самой длинной трассе!</p>
                                         <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
                                     </div>
-                                    <button class="btn">Участвовать!</button>
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn">Участвовать!</button>
                                 </div>
                                 <div class="col-md-5 col-sm-0">
                                     <img class="slider__img" src="img/snowborder2.png" alt="">
@@ -112,7 +118,7 @@
                                         <p class="slider__text_second">по самой длинной трассе!</p>
                                         <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
                                     </div>
-                                    <button class="btn">Участвовать!</button>
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn">Участвовать!</button>
                                 </div>
                                 <div class="col-md-5 col-sm-0">
                                     <img class="slider__img" src="img/ski-man4.png" alt="">
@@ -126,7 +132,7 @@
                                         <p class="slider__text_second">по самой длинной трассе!</p>
                                         <p class="slider__text_third"><span>и выиграй</span> классные призы</p>
                                     </div>
-                                    <button class="btn">Участвовать!</button>
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn">Участвовать!</button>
                                 </div>
                                 <div class="col-md-5 col-sm-0">
                                     <img class="slider__img" src="img/snowborder4.png" alt="">
@@ -589,6 +595,56 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/8.jpg" alt="">
+                                    <p>г. Сочи, “Горки-Город”, ул. Горная Карусель, 5</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/1.jpg" alt="">
+                                    <p>ГКК “Альпика-Сервис”, ул. Олимпийская, 24</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/5.jpg" alt="">
+                                    <p>ГЛК “Роза-Хутор”, <br> наб. Лаванда, 2</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/4.jpg" alt="">
+                                    <p>ГЛК “Роза-Хутор”, <br> ул. Каменка, 2</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/2.jpg" alt="">
+                                    <p>ГТЦ ПАО “Газпром” приют “Пихтовый</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/3.jpg" alt="">
+                                    <p>ГТЦ ПАО “Газпром” приют “Псехако”</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/4.jpg" alt="">
+                                    <p>ГТЦ ПАО “Газпром” Нижня Станция</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="rental__item">
+                                    <img src="img/rental_service/7.jpg" alt="">
+                                    <p>ГТЦ ПАО “Газпром” прокат Горнолыжного</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -611,9 +667,34 @@
                         <li class="contact__item"><a href="#">г.Сочи, ул. Олимпийская, 14а, Центральный прокат InterSport</a></li>
                         <li class="contact__item"><a href="#">г. Сочи, ул. Олимпийская, 18</a></li>
                     </ul>
-
                 </div>
             </section>
+            <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Отправьте заявку</h4>
+                            <p>и с вами свяжутся наши сотрудники в течении 5 минут</p>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form">
+                                <div class="form-item top-ski_input" style="background-image: url(img/top_ski_input.png); width: 100%; height: 50px; background-repeat: no-repeat; background-size: auto;  ">
+                                    <input class="form-control user_name" id="user_name" name="user_name" required placeholder="Ваше имя..." type="text">
+                                </div>
+                                <div class="form-item bottom-ski_input" style="background-image: url(img/top_ski_input.png); width: 100%; height: 50px; background-repeat: no-repeat; background-size: auto;  ">
+                                    <input class="form-control user_phone"  id="user_phone" type="tel" name="user_phone" required placeholder="Ваш номер телефона">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <div class="container">
@@ -636,7 +717,7 @@
                             <p>Адрес: 354392, Краснодарский край,
                                 г. Сочи, <br> Адлерский р-н, п. Эсто-Садок, <br>
                                 ул. Олимпийская, 18</p>
-                            <div class="btn btn__footer">Онлайн бронирование</div>
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn__footer">Онлайн бронирование</button>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="footer__pay">
@@ -678,46 +759,48 @@
         <link rel="stylesheet" href="css/main.min.css">
         <script src="js/scripts.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="libs/jquery/jquery.validate.min.js"></script>
+        <script src="js/maskinput.js"></script>
         <script>
-            $(document).ready(function () {
-                $('.slider').owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    dots: true,
-                    nav: false,
-                    autoplay: true,
-                    autoplayTimeout: 6000,
-                    autoplayHoverPause: true,
-                    smartSpeed: 600,
-                    items: 1
-                });
-                $('.equip').owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    dots: true,
-                    nav: false,
-                    responsiveClass: true,
-                    smartSpeed: 600,
-                    responsive:{
-                        0:{
-                            items: 1
-                        },
-                        600:{
-                            items: 3
-                        },
-                        1000:{
-                            items: 4
-                        }
+            $('.slider').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: true,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                smartSpeed: 600,
+                items: 1
+            });
+            $('.equip').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: true,
+                nav: false,
+                responsiveClass: true,
+                smartSpeed: 600,
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    600:{
+                        items: 3
+                    },
+                    1000:{
+                        items: 4
                     }
-                });
-                $('.rental').owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    dots: true,
-                    nav: false,
-                    smartSpeed: 600,
-                    items: 1
-                });
+                }
+            });
+            $('.rental').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: true,
+                nav: false,
+                smartSpeed: 600,
+                items: 1
+            });
+            $(document).ready(function () {
                 var myMap;
 
                 ymaps.ready(init);
@@ -731,6 +814,23 @@
                     });
 
                 }
+                $('#user_phone').mask("+7(999)999-99-99");
+                $('#form').validate({
+                    rules: {
+                        user_name: {
+                            required: true,
+                            minlength: 2
+                        },
+                        user_phone: {
+                            required: true,
+                            minlength: 10
+                        }
+                    },
+                    messages: {
+                        user_name: "Пожалуйста, введите свое имя",
+                        user_phone: "Пожалуйста, введите свой номер телефона"
+                    }
+                });
             })
         </script>
 
