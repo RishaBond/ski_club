@@ -677,7 +677,7 @@
                             <p>и с вами свяжутся наши сотрудники в течении 5 минут</p>
                         </div>
                         <div class="modal-body">
-                            <form id="form">
+                            <form id="form" action="smart.php" method="POST">
                                 <div class="success text-center">
                                     <span>Спасибо за заявку!</span> <br>
                                     <img src="img/eagle-tnx.png" alt="">
@@ -764,7 +764,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Yandex.Metrika counter -->
+        <!-- Yandex.Metrika counter
         <script type="text/javascript" >
             (function (d, w, c) {
                 (w[c] = w[c] || []).push(function() {
@@ -792,6 +792,7 @@
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/47308839" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
+        -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -799,44 +800,6 @@
         <script src="js/scripts.min.js"></script>
         <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
         <script>
-            $('.slider').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: true,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 6000,
-                autoplayHoverPause: true,
-                smartSpeed: 600,
-                items: 1
-            });
-            $('.equip').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: true,
-                nav: false,
-                responsiveClass: true,
-                smartSpeed: 600,
-                responsive:{
-                    0:{
-                        items: 1
-                    },
-                    600:{
-                        items: 3
-                    },
-                    1000:{
-                        items: 4
-                    }
-                }
-            });
-            $('.rental').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: true,
-                nav: false,
-                smartSpeed: 600,
-                items: 1
-            });
             $(document).ready(function () {
                 var myMap;
 
@@ -851,6 +814,60 @@
                     });
 
                 }
+                $('form').submit(function(event) {
+                    event.preventDefault();
+                    $.ajax({
+                        type: "POST",
+                        url: "smart.php",
+                        data: $(this).serialize()
+                    }).done(function() {
+                        $(this).find("input").val("");
+                        $(this).find("textarea").val("");
+                        $('.success').fadeIn();
+                        $("form").trigger("reset");
+                    });
+                    return false;
+                });
+
+                // Custom JS
+                $('.slider').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: true,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 6000,
+                    autoplayHoverPause: true,
+                    smartSpeed: 600,
+                    items: 1
+                });
+                $('.equip').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: true,
+                    nav: false,
+                    responsiveClass: true,
+                    smartSpeed: 600,
+                    responsive:{
+                        0:{
+                            items: 1
+                        },
+                        600:{
+                            items: 3
+                        },
+                        1000:{
+                            items: 4
+                        }
+                    }
+                });
+                $('.rental').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: true,
+                    nav: false,
+                    smartSpeed: 600,
+                    items: 1
+                });
                 $('#user_phone').mask("+7(999)999-99-99");
                 $('#form').validate({
                     rules: {
