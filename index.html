@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
     <head>
-
         <meta charset="utf-8">
         <title>SKI CLUB Прокат горных лыж и сноубордов</title>
         <meta name="description" content="SKI CLUB Прокат горных лыж и сноубордов">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto+Condensed:400,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
+        <div class="preloader"></div>
         <header class="header">
             <div class="header__top">
                 <div class="container">
@@ -146,7 +144,7 @@
         </header>
         <main>
             <section class="section-services section">
-                <a name="about"></a>
+                <a id="about"></a>
                 <div class="container">
                     <div class="title">
                         <h2 class="h2">Наши услуги</h2>
@@ -200,8 +198,8 @@
                 </div>
             </section>
             <section class="section-equip section section-color">
-                <a name="equipment"></a>
-                <a name="price"></a>
+                <a id="equipment"></a>
+                <a id="price"></a>
                 <div class="container">
                     <div class="title">
                         <h2>Прокат оборудования</h2>
@@ -405,7 +403,7 @@
                 </div>
             </section>
             <section class="section-team section">
-                <a name="team"></a>
+                <a id="team"></a>
                 <div class="container">
                     <div class="title">
                         <h2 class="h2">Наша команда</h2>
@@ -538,7 +536,7 @@
                 </div>
             </section>
             <section class="section-rental section">
-                <a name="rental"></a>
+                <a id="rental"></a>
                 <div class="container">
                     <div class="title">
                         <h2 class="h2">Наши пункты проката</h2>
@@ -649,7 +647,8 @@
                 </div>
             </section>
             <section class="section-contact section-color">
-                <a name="contact"></a>
+                <h2 class="hidden">Контакты</h2>
+                <a id="contact"></a>
                 <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A036863424f02bc1d42f2e26938a2a7c9189841903e6eca00d91d2d4fc53903ff&amp;width=50%&amp;height=470&amp;lang=ru_RU&amp;scroll=true"></script>-->
                 <div id="map"></div>
                 <div class="contact">
@@ -679,10 +678,19 @@
                         </div>
                         <div class="modal-body">
                             <form id="form">
-                                <div class="form-item top-ski_input" style="background-image: url(img/top_ski_input.png); width: 100%; height: 50px; background-repeat: no-repeat; background-size: auto;  ">
+                                <div class="success text-center">
+                                    <span>Спасибо за заявку!</span> <br>
+                                    <img src="img/eagle-tnx.png" alt="">
+                                </div>
+
+                                <input type="hidden" name="project_name" value="SKI-CLUB">
+                                <input type="hidden" name="admin_email" value="lavless13@mail.com">
+                                <input type="hidden" name="form_subject" value="Заявка с сайта SKI-CLUB">
+
+                                <div class="form-item top-ski_input">
                                     <input class="form-control user_name" id="user_name" name="user_name" required placeholder="Ваше имя..." type="text">
                                 </div>
-                                <div class="form-item bottom-ski_input" style="background-image: url(img/top_ski_input.png); width: 100%; height: 50px; background-repeat: no-repeat; background-size: auto;  ">
+                                <div class="form-item bottom-ski_input">
                                     <input class="form-control user_phone"  id="user_phone" type="tel" name="user_phone" required placeholder="Ваш номер телефона">
                                 </div>
                             </form>
@@ -727,7 +735,7 @@
                                     <img src="img/card/mastercard.jpg" alt="mastercard" class="payment__img">
                                     <img src="img/card/payonline.jpg" alt="pay online" class="payment__img">
                                 </div>
-                                <a href="#">подробнее о приеме платежей</a>
+                                <a>подробнее о приеме платежей</a>
                                 <p>Индивидуальный предприниматель <br>
                                     Сычев Павел Алексеевич <br>
                                     ИНН 701701647164, ОГРНИП 315236700017972</p>
@@ -737,12 +745,12 @@
                 </div>
                 <div class="row">
                     <div class="copyright">
-                        <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="copyright_left">
                                 <p><a href="https://skirentservice.ru" target="_blank">www.skirentservice.ru</a></p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="copyright_center">
                                 <p>Группа компаний Ski Club</p>
                             </div>
@@ -756,11 +764,40 @@
                 </div>
             </div>
         </footer>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter47308839 = new Ya.Metrika({
+                            id:47308839,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/47308839" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/main.min.css">
         <script src="js/scripts.min.js"></script>
-        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-        <script src="libs/jquery/jquery.validate.min.js"></script>
-        <script src="js/maskinput.js"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
         <script>
             $('.slider').owlCarousel({
                 loop: true,
