@@ -1,7 +1,7 @@
 <?php 
-$whatever = $POST([wharever]);
-$user_name = $POST([user_name]);
-$user_phone = $POST([user_phone]);
+$whatever = $_POST['wharever'];
+$user_name = $_POST['user_name'];
+$user_phone = $_POST['user_phone'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -28,14 +28,15 @@ $mail->addAddress('lavless13@mail.ru', 'Joe User');     // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка на онлайн бронировани';
-$mail->Body    = 'Это тело сообщения дальше жирное <b>блаблабла</b>';
+$mail->Body    = 'сайт SKI-GROUP <br>
+    Имя: '. $user_name .' <br>
+    Телефон: '. $user_phone .' <br>';
 $mail->AltBody = 'Это сообщение в формате plain text';
 
 if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    return false;
 } else {
-    echo 'Message has been sent';
+    return true;
 }
 
 ?>
